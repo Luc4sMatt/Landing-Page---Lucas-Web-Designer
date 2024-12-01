@@ -24,7 +24,7 @@ body{
     display: flex;
     /* align-items: center; */
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 120px;
     padding:0;
 }
 
@@ -186,6 +186,7 @@ body{
 
 .container-servicos{
     width: 100%;
+    /* height: 100%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -202,19 +203,96 @@ body{
 .servicos-left h1{
     color:#135EFF;
 }
-.servicos-right{
+.container-servicos .servicos-right{
     max-width: 50%;
+    /* height: 100%; */
 }
-.servicos-right img{
+.container-servicos .servicos-right img{
     max-width: 75%;
+    height: 100%;
+    object-fit: cover;
+    /* height: 100%; */
 }
 
+.container-final{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:30px;
+    gap:10px;
+}
+
+.container-final .description-formulario{
+    width: 30%;
+    padding:20px;
+    margin-top: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.container-final .description-formulario h1{
+    color:#135EFF;
+}
+.container-final .formulario{
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.container-final .formulario form{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.container-final .formulario input{
+    width: 100%;
+    padding:10px;
+    border-radius: 2px;
+    color:gray;
+}
+
+.container-final .formulario input:focus{
+    border: 1px solid #135EFF;
+    outline:none;
+}
+.container-final .formulario button{
+    width: 100%;
+    padding:10px;
+}
+.container-final .formulario .enviar-form{
+    font-size:17px;
+    background-color: #135EFF;
+    color:white;
+}
+
+.container-final .formulario .enviar-form:hover{
+    background-color: #276fff;
+    
+}
+.container-final .formulario .enviar-msg{
+    font-size:17px;
+    background-color: #6aed13;
+    color:black;
+}
+.container-final .formulario .enviar-msg:hover{
+    background-color: #8bff3e;
+    color:white;
+}
+
+.container-final .contatos{
+    text-align: center;
+    color:grey;
+}
 
 /* slide de clientes  início*/
 
 .container-background{
     width: 100%;
-    background: linear-gradient(to bottom, #151515, #020F2E, #001B51);
+    background: linear-gradient(to bottom, #151515, #020F2E, #001B51, #0940ad);
     padding:40px;
 }
 
@@ -431,11 +509,11 @@ body{
 
 
 /* From Uiverse.io by Subaashbala */ 
-button {
+.btn-stiles{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1em 0em 1em 1em;
+    padding: 10px;
     background-color: yellow;
     cursor: pointer;
     box-shadow: 4px 6px 0px black;
@@ -446,14 +524,14 @@ button {
     z-index: 100;
     transition: box-shadow 250ms, transform 250ms, filter 50ms;
   }
-  button:hover {
+  .btn-stiles:hover {
     transform: translate(2px, 2px);
     box-shadow: 2px 3px 0px black;
   }
-  button:active {
+  .btn-stiles:active {
     filter: saturate(0.75);
   }
-  button::after {
+  .btn-stiles::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -462,6 +540,6 @@ button {
     transform: translateX(-100%);
     transition: transform 250ms;
   }
-  button:hover::after {
+  .btn-stiles:hover::after {
     transform: translateX(0);
   }
