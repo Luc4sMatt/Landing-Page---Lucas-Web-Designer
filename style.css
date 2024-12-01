@@ -44,8 +44,7 @@ body{
     background-color:#135EFF;
     padding:12px;
     color:white;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius:10px;
+    border-radius: 10px;
     font-size:20px;
 }
 
@@ -97,6 +96,7 @@ body{
 }
 
 .card-container{
+    background-color: #151515;
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 50px;
@@ -104,11 +104,52 @@ body{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    border: 2px solid #135EFF;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius:10px;
+    /* border: 2px solid #135EFF; */
+    border-radius: 10px;
+    position:relative;
     /* align-items: center; */
 }
+
+/* Animação dos Cards  */
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.card-container::after, .card-container::before{
+    --angle: 0deg;
+    content: '';
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), transparent 10%, blue);
+    top:50%;
+    left:50%;
+    translate:-50% -50%;
+    z-index: -1;
+    padding:3px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+}
+
+.card-container::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
+/* Animação dos Cards  */
+
 .container-cards .card-icone{
     width: 100%;
     display: flex;
@@ -175,8 +216,7 @@ body{
     background-color:#135EFF;
     padding:12px;
     color:white;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius:10px;
+    border-radius: 10px;
     font-size:20px;
 }
 .container-vamos-conversar button a{
@@ -376,6 +416,9 @@ body{
 }
 
 
+
+/* Responsividade para telas padrão */
+
 @media (max-width: 1920px){
     .bem-vindo{
         margin-top: -20px;;
@@ -388,7 +431,12 @@ body{
         padding-right: 200px;
     }
 }
+/* Responsividade para telas padrão */
 
+
+
+
+/* Responsividade para celulares  */
 
 @media (max-width: 767px){
     .container{
@@ -434,7 +482,7 @@ body{
         display: flex;
         flex-direction: column;
         gap: 10px;
-        border: 2px solid #135EFF;
+        /* border: 2px solid #135EFF; */
         border-top-left-radius: 10px;
         border-bottom-right-radius:10px;
         margin:0;
@@ -501,9 +549,16 @@ body{
     .slider-container .swiper-navBtn{
         display: none;
     }
+    .container-final .description-formulario{
+        width: 100%;
+        padding:20px;
+    }
+    .container-final .formulario{
+        width: 100%;
+    }
 }
 
-
+/* Responsividade para celulares  */
 
 
 
@@ -536,7 +591,7 @@ body{
     content: "";
     position: absolute;
     inset: 0;
-    background-color: #54ea1d;
+    background-color:#2b6dfc;
     z-index: -1;
     transform: translateX(-100%);
     transition: transform 250ms;
