@@ -271,15 +271,16 @@ body{
 
 .container-final .formulario .enviar-form:hover{
     background-color: #276fff;
-    
+    cursor:pointer;
 }
 .container-final .formulario .enviar-msg{
     font-size:17px;
     background-color: #6aed13;
-    color:black;
+    color:white;
 }
 .container-final .formulario .enviar-msg:hover{
-    background-color: #8bff3e;
+    cursor:pointer;
+    background-color: #80f533;
     color:white;
 }
 
