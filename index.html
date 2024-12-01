@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Designer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
 </head>
 <body>
     <!-- tela 1 -->
@@ -103,25 +104,90 @@
         </div>
     </div>
 
-    <div class="container-prova-social">
-        <h1 class="container-h2">Depoimento de Clientes</h1>
-        <div class="container-clientes">
-            <div class="card-cliente">
-                <img src="https://cdn-icons-png.flaticon.com/512/266/266033.png" alt="Foto de Cliente">
-                <h1>Dr. Matheus Cabral</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-            </div>
-            <div class="card-cliente">
-                <img src="https://cdn-icons-png.flaticon.com/512/266/266033.png" alt="Foto de Cliente">
-                <h1>Dr. Matheus Cabral</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-            </div>
-            <div class="card-cliente">
-                <img src="https://cdn-icons-png.flaticon.com/512/266/266033.png" alt="Foto de Cliente">
-                <h1>Dr. Matheus Cabral</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+
+<div class="container-background">
+    <!-- carrossel  -->
+    <div class="slider-container swiper">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <!-- <span class="overlay"> -->
+                            <div class="card-image">
+                                <img src="img/img-lucas2.png" alt="" class="card-img">
+                            </div>
+                        <!-- </span> -->
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Cliente</h2>
+                        <p class="description">the Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ipsam dolores tempora voluptatem maiores nihil a quos esse, possimus ad officia nemo repellat harum sapiente suscipit reprehenderit molestias tempore quaerat.</p>
+                        
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay">
+                            <div class="card-image">
+                                <img src="img/img-lucas2.png" alt="" class="card-img">
+                            </div>
+                        </span>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Cliente</h2>
+                        <p class="description">the Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ipsam dolores tempora voluptatem maiores nihil a quos esse, possimus ad officia nemo repellat harum sapiente suscipit reprehenderit molestias tempore quaerat.</p>
+                        
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay">
+                            <div class="card-image">
+                                <img src="img/img-lucas2.png" alt="" class="card-img">
+                            </div>
+                        </span>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Cliente</h2>
+                        <p class="description">the Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ipsam dolores tempora voluptatem maiores nihil a quos esse, possimus ad officia nemo repellat harum sapiente suscipit reprehenderit molestias tempore quaerat.</p>
+                        
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay">
+                            <div class="card-image">
+                                <img src="img/img-lucas2.png" alt="" class="card-img">
+                            </div>
+                        </span>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Cliente</h2>
+                        <p class="description">the Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ipsam dolores tempora voluptatem maiores nihil a quos esse, possimus ad officia nemo repellat harum sapiente suscipit reprehenderit molestias tempore quaerat.</p>
+                    </div>
+                </div>
             </div>
         </div>
+
+
+        <div class="swiper-button-next swiper-navBtn" id="btnnext"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <br>
+        <br>
+        <div class="swiper-pagination"></div>
     </div>
+</div>
 </body>
+    <!-- Swiper JS  -->
+    <script src="js/swiper-bundle.js"></script>
+
+    <!-- JavaScript  -->
+     <script src="script.js"></script>
+
 </html>
