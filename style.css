@@ -461,6 +461,47 @@ footer{
 
 
 
+/* Responsividade Tablets  */
+@media (max-width: 1024px){
+    .title-left{
+        padding:20px 60px;
+    }
+    .bem-vindo{
+        margin-top:-5px;
+    }
+    .container-cards{
+        padding:60px;
+        grid-template-rows: 520px;
+        margin-top: 20px;
+    }
+    .container-servicos{
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-vamos-conversar .center{
+        width: 40%;
+    }
+    .container-servicos .servicos-left{
+        padding:60px 90px;
+    }
+    .container-servicos .servicos-right{
+        padding:60px;
+    }
+    .container-final{
+        padding: 20px;
+    }
+    .container-final .description-formulario{
+        width: 50%;
+    }
+    .container-final .formulario{
+        width: 50%;
+    }
+
+}
+/* Responsividade Tablets  */
+
+
 
 /* Responsividade para celulares  */
 
