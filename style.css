@@ -379,16 +379,25 @@ footer{
 
 .image-content, 
 .card-content{
-    padding: 10px 20px 40px 20px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    gap:10px;
+}
+.card-content{
+    height: 210px;
+}
+.card-content h2{
+    margin-top: -10px;
 }
 
 .card{
     width: 320px;
     border-radius: 25px;
     background-color:#eaeaea;
+    padding:15px;
+    display: flex;
 }
 
 .image-content{
@@ -399,8 +408,8 @@ footer{
 
 .card-image{
     position: relative;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     background: #eaeaea;
     padding: 3px;
 }
@@ -420,18 +429,31 @@ footer{
 .description{
     font-size: 14px;
     color:rgb(31, 31, 31);
-    text-align: center;
+    text-align: left;
+    overflow: hidden;
+    position:relative;
 }
 
-.button{
-    border: none;
+.description::before{
+    content: '';
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, #eaeaea);
+}
+
+
+
+.card-content button{
+    /* border: none; */
     font-size: 16px;
     color:#FFFFFF;
     padding: 8px 16px;
     background-color: #135EFF;
     border-radius: 6px;
-    margin: 14px;
     transition: all 0.4 ease;
+    margin-top: auto;
 }
 .swiper-pagination-bullet{
     border: 2px solid white;
@@ -663,10 +685,10 @@ footer{
 /* From Uiverse.io by Subaashbala */ 
 .btn-stiles{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 10px;
-    background-color: yellow;
+    background-color: #2b6dfc;
     cursor: pointer;
     box-shadow: 4px 6px 0px black;
     /* border: 2px solid; */
@@ -675,6 +697,8 @@ footer{
     overflow: hidden;
     z-index: 100;
     transition: box-shadow 250ms, transform 250ms, filter 50ms;
+    border-radius: 10px;
+    color:white;
   }
   .btn-stiles:hover {
     transform: translate(2px, 2px);
