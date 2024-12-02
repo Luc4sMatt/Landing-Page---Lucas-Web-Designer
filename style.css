@@ -329,6 +329,32 @@ body{
     color:grey;
 }
 
+.container-final .icon-contatos{
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    padding:20px;
+}
+.container-final .icon-contatos img{
+    width: 28px;
+}
+.container-final .icon-contatos img:hover{
+    cursor:pointer;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    padding:50px;
+    color:#9F9D9D;
+}
+
+
 /* slide de clientes  início*/
 
 .container-background{
@@ -456,15 +482,22 @@ body{
         flex-direction: column;
         width: 100%;
         gap: 15px;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
     }
 
     .container-apresentação .title-left{
-        width: 100%;
+        max-width: 800%;
         padding: 0;
         text-align: center;
     }
-    .container-apresentação .title-right img{
+
+    .container-apresentação .title-right{
         width: 100%;
+    }
+    .container-apresentação .title-right img{
+        max-width: 100%;
         padding: 0px;
     }
     .container-cards{
@@ -527,20 +560,22 @@ body{
     .container-servicos{
         flex-direction: column;
         margin-top:0;
+        padding:20px;
     }
     .servicos-left{
         max-width: 100%;
         padding:50px;
-        
     }
     .servicos-left h1{
         color:#135EFF;
     }
-    .servicos-right{
-        width: 100%;
+    .container-servicos .servicos-right{
+        max-width: 80%;
+
     }
-    .servicos-right img{
+    .container-servicos .servicos-right img{
         max-width: 100%;
+        /* padding: 0; */
     }
 
     .slide-content{
@@ -555,6 +590,12 @@ body{
     }
     .container-final .formulario{
         width: 100%;
+    }
+    footer{
+        width: 100%;
+        /* padding: 20px; */
+        font-size:11px;
+        text-align: center;
     }
 }
 
