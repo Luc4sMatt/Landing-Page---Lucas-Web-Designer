@@ -24,7 +24,7 @@ body{
     display: flex;
     /* align-items: center; */
     justify-content: center;
-    margin-top: 120px;
+    margin-top: 90px;
     padding:0;
 }
 
@@ -501,7 +501,21 @@ footer{
 }
 /* Responsividade Tablets  */
 
-
+@media (max-width: 414px){
+    body .container-servicos{
+        background-color: white;
+        max-width: 100%;
+        padding:0;
+    }
+    body .container-servicos .servicos-left{
+        max-width: 100%;
+        padding:0;
+    }
+    body .container-servicos .servicos-right{
+        max-width: 100%;
+        padding:0;
+    }
+}
 
 /* Responsividade para celulares  */
 
