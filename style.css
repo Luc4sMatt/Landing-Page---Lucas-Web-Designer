@@ -40,12 +40,16 @@ body{
     color:#135EFF;
 }
 
-.title-left button{
+.title-left a button{
+    width: 100%;
     background-color:#135EFF;
     padding:12px;
     color:white;
     border-radius: 10px;
     font-size:20px;
+}
+.title-left a{
+    text-decoration: none;
 }
 
 .title-right{
@@ -219,6 +223,10 @@ body{
     border-radius: 10px;
     font-size:20px;
 }
+.container-vamos-conversar a{
+    width: 100%;
+    text-decoration: none;
+}
 .container-vamos-conversar button a{
     text-decoration: none;
     color:white;
@@ -357,9 +365,15 @@ footer{
 
 /* slide de clientes  início*/
 
+.title1{
+    width: 100%;
+    text-align: center;
+    padding:10px 20px 10px 20px;
+}
+
 .container-background{
     width: 100%;
-    background: linear-gradient(to bottom, #151515, #020F2E, #001B51, #0940ad);
+    background: linear-gradient(to top, #151515, #020F2E, #001B51, #0940ad);
     padding:40px;
 }
 
