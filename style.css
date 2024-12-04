@@ -580,9 +580,11 @@ footer{
 
 @media (max-width: 414px){
     body .container-servicos{
-        background-color: white;
+        /* background-color: white; */
         max-width: 100%;
-        padding:0;
+        padding:50px;
+        margin-bottom: 10px;
+        gap:40px;
     }
     body .container-servicos .servicos-left{
         max-width: 100%;
