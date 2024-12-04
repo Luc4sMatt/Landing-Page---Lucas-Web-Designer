@@ -52,7 +52,7 @@ body{
     right: 0;
     background-color:#151515;
     width: 100%;
-    animation: typing 2s steps(17) alternate infinite,
+    animation: typing 3s steps(17) alternate infinite,
                 line 1s infinite;
 }
 @keyframes typing{
