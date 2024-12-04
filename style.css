@@ -40,6 +40,32 @@ body{
     color:#135EFF;
 }
 
+.typewriter{
+    color:#135EFF;
+    position: relative;
+}
+
+.typewriter::after{
+    content: '|';
+    position:absolute;
+    color:white;
+    right: 0;
+    background-color:#151515;
+    width: 100%;
+    animation: typing 2s steps(17) alternate infinite,
+                line 1s infinite;
+}
+@keyframes typing{
+    to{
+        width: 0%;
+    }
+}
+@keyframes line {
+    50%{
+        color:transparent;
+    }
+}
+
 .title-left a button{
     width: 100%;
     background-color:#135EFF;
@@ -703,6 +729,7 @@ footer{
         font-size:11px;
         text-align: center;
     }
+    
 }
 
 /* Responsividade para celulares  */
