@@ -612,18 +612,6 @@ footer{
         margin-bottom: 10px;
         gap:40px;
     }
-
-    .container-apresentação{
-        align-items: center;
-        justify-content: center;
-    }
-    .container-apresentação .title-right{
-        padding:0;
-    }
-    .container .title-left{
-        width: 100%;
-        padding: 50px;
-    }
     body .container-servicos .servicos-left{
         max-width: 100%;
         padding:0;
