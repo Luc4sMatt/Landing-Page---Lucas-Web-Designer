@@ -539,18 +539,19 @@ footer{
 
 
 /* Responsividade Tablets  */
-@media (max-width: 1025px){
+@media (min-width: 768px) and (max-width: 1024px){
     .container{
         align-items: center;
         margin-top:90px;
+        flex-direction: column;
     }
     .container .title-left{
-        padding:40px;
-        width: 50%;
+        padding:120px;
+        width: 100%;
         margin: 0;
     }
     .container .title-right{
-        width: 50%;
+        min-width: 80%;
         padding: 0;
         margin: 0;
     }
@@ -559,17 +560,19 @@ footer{
         align-items: center;
         justify-content: center;
         box-sizing: border-box;
+        padding:100px 30px;
     }
-    .title-left{
-        padding:60px 70px;
+    .container-apresentação .title-left{
+        padding:60px 50px;
     }
     .container-apresentação .title-right{
+        min-width: 50%;
         padding: 0px;
         margin: 0;
         box-sizing: border-box;
     }
     .container-apresentação .title-right img{
-        width: 80%;
+        width: 100%;
     }
     .bem-vindo{
         margin-top:-5px;
@@ -611,13 +614,19 @@ footer{
         align-items: center;
         justify-content: center;
         margin-top:0;
+        flex-direction: column;
     }
 
     .container-servicos .servicos-right{
+        min-width: 100%;
         padding:0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .container-servicos .servicos-left{
+        min-width: 100%;
         padding:80px;
     }
     .container-vamos-conversar .center{
