@@ -636,7 +636,7 @@ footer{
 }
 /* Responsividade Tablets  */
 
-@media (max-width: 415px){
+@media (max-width: 431px){
     body .container-servicos{
         /* background-color: white; */
         max-width: 100%;
@@ -651,11 +651,13 @@ footer{
     body .container-servicos .servicos-right{
         max-width: 100%;
         padding:0;
+        margin-bottom: -60px;
     }
     .container .title-right{
         width: 100%;
     }
 }
+
 
 /* Responsividade para celulares  */
 
@@ -779,8 +781,7 @@ footer{
         color:#135EFF;
     }
     .container-servicos .servicos-right{
-        max-width: 100%;
-        margin-bottom:-63px;
+        max-width: 80%;
     }
     .container-servicos .servicos-right img{
         max-width: 100%;
