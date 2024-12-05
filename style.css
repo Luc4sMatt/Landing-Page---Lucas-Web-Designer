@@ -652,6 +652,9 @@ footer{
         max-width: 100%;
         padding:0;
     }
+    .container .title-right{
+        width: 100%;
+    }
 }
 
 /* Responsividade para celulares  */
