@@ -594,19 +594,7 @@ footer{
     }
 
     .card-container::after, .card-container::before{
-        --angle: 0deg;
-        content: '';
-        position:relative;
-        height: 100%;
-        width: 100%;
-        background-image: conic-gradient(from var(--angle), transparent 10%, blue);
-        top:50%;
-        left:50%;
-        translate:-50% -50%;
-        z-index: -1;
-        padding:3px;
-        border-radius: 10px;
-        animation: 3s spin linear infinite;
+        display: none;
     }
 
     .container-servicos{
