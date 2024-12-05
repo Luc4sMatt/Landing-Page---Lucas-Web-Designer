@@ -630,16 +630,28 @@ footer{
         width: 100%;
         align-items: center;
     }
-    .title-left{
+    .container .title-left{
         width: 100%;
         padding:50px;
     }
 
+    .container-apresentação .title-left{
+        width: 100%;
+        padding: 40px;
+    }
+    .container-apresentação .title-right{
+        max-width: 100%;
+    }
+    .container-apresentação .title-right img{
+        width: 100%;
+    }
 
-    .title-right{
+    .container .title-right{
         max-width: 100%;
         /* height: 100%; */
     }
+
+
     .container-apresentação{
         flex-direction: column;
         width: 100%;
