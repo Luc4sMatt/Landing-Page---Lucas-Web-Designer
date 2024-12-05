@@ -542,13 +542,15 @@ footer{
 @media (max-width: 1025px){
     .container{
         align-items: center;
+        margin-top:90px;
     }
     .container .title-left{
-        padding:20px;
-        width: 30%;
+        padding:40px;
+        width: 50%;
         margin: 0;
     }
     .container .title-right{
+        width: 50%;
         padding: 0;
         margin: 0;
     }
@@ -559,10 +561,10 @@ footer{
         box-sizing: border-box;
     }
     .title-left{
-        padding:60px 100px;
+        padding:60px 70px;
     }
     .container-apresentação .title-right{
-        padding: 50px;
+        padding: 0px;
         margin: 0;
         box-sizing: border-box;
     }
@@ -573,23 +575,53 @@ footer{
         margin-top:-5px;
     }
     .container-cards{
-        padding:60px;
-        grid-template-rows: 520px;
-        margin-top: 20px;
+        width: 100%;
+        /* padding:100px; */
+        display: flex;
+        flex-direction: column;
+        margin:0;
+        gap:70px;
+        align-items: center;
+        justify-content: center;
     }
+    .container-cards .card-container{
+        width: 100%;
+        padding:40px;
+        border: 3px solid blue;
+    }
+
+    .card-container::after, .card-container::before{
+        --angle: 0deg;
+        content: '';
+        position:relative;
+        height: 100%;
+        width: 100%;
+        background-image: conic-gradient(from var(--angle), transparent 10%, blue);
+        top:50%;
+        left:50%;
+        translate:-50% -50%;
+        z-index: -1;
+        padding:3px;
+        border-radius: 10px;
+        animation: 3s spin linear infinite;
+    }
+
     .container-servicos{
         padding: 0;
         align-items: center;
         justify-content: center;
+        margin-top:0;
+    }
+
+    .container-servicos .servicos-right{
+        padding:0;
+    }
+
+    .container-servicos .servicos-left{
+        padding:80px;
     }
     .container-vamos-conversar .center{
         width: 40%;
-    }
-    .container-servicos .servicos-left{
-        padding:60px 90px;
-    }
-    .container-servicos .servicos-right{
-        padding:60px;
     }
     .container-final{
         padding: 20px;
